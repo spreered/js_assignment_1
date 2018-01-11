@@ -1,0 +1,21 @@
+.u-mt-30{
+  margin-top: 30px;
+}
+
+/* Q1 */
+#showbox{
+  height: 80px;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+
+}
+.image-box img{
+  width: 100%;
+}
+.image-box{
+  margin-top: 30px;
+}
+#warning{
+  color: red;
+}
