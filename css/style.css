@@ -1,6 +1,15 @@
 .u-mt-30{
   margin-top: 30px;
 }
+.u-mt-70{
+  margin-top: 70px;
+}
+.warning-msg{
+  color: red;
+}
+.success-msg{
+  color: green;
+}
 
 /* Q1 */
 #showbox{
@@ -18,4 +27,19 @@
 }
 #warning{
   color: red;
+}
+
+
+/* Q2 */
+#display-gender{
+
+  font-size: 200px;
+  width: 100%;
+  text-align: center;
+}
+.male:after{
+  content: "男";
+}
+.female:after{
+  content: "女"
 }
