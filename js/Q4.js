@@ -42,11 +42,13 @@ function createToDo(){
     if(!check){
       return;
     }
-    console.log("remove"+this.parentNode.parentNode.firstChild.innerHTML);
+    console.log("task done :"+this.parentNode.parentNode.firstChild.innerHTML);
 
+    //更改todoitem顏色
+    this.parentNode.parentNode.firstChild.classList.add("task_done");
     // tbody>tr>td>div.btn
-    // 要指向tbody把tr刪掉 
-    this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+    // 要指向tbody把btn刪掉 
+    this.parentNode.innerHTML = "";
   }
   //removeButton::將按鈕加入todoitem中
   todoctrl.appendChild(removeButton);
@@ -59,6 +61,7 @@ function createToDo(){
   var todolist = document.getElementById("todo_body");
   todolist.appendChild(todoitem);
 
+ 
 
 }
 

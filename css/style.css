@@ -43,3 +43,8 @@
 .female:after{
   content: "女"
 }
+
+/* Q4 */
+.task_done{
+  color: #a0a122;
+}
