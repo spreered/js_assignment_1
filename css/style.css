@@ -45,6 +45,14 @@
 }
 
 /* Q4 */
-.task_done{
+#todo_body>tr>td.task_done{
   color: #a0a122;
+}
+
+/* Q5 */
+#todo_body>tr>td{
+  color: green;
+}
+#todo_body>tr>td.urgent{
+  color: red;
 }

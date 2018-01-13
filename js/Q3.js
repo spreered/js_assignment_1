@@ -2,8 +2,6 @@ function createToDo(){
   var todoitem = document.createElement("tr");
   var todo = document.createElement("td");
   var todoctrl = document.createElement("td");
-  // var replaceButton = document.createElement("button");
-  // var removeButton = document.createElement("button");
   var input = document.getElementById("task");
 
   //----- 新增內容 -----

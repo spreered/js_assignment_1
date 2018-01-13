@@ -2,14 +2,16 @@ function createToDo(){
   var todoitem = document.createElement("tr");
   var todo = document.createElement("td");
   var todoctrl = document.createElement("td");
-
   var input = document.getElementById("task");
-
+  var urgent = document.getElementById("urgent").checked;
   //----- 新增內容 -----
   if(input.value == ""){
     input.value = "空空ㄉ";
   }
   todo.innerHTML = input.value;
+  if(urgent){
+    todo.classList.add("urgent");
+  }
   console.log(input.value);
   todoitem.appendChild(todo);
 
@@ -26,6 +28,11 @@ function createToDo(){
     }
     console.log(input.value);
     this.parentNode.parentNode.firstChild.innerHTML = input.value;
+    if(document.getElementById("urgent").checked){
+      this.parentNode.parentNode.firstChild.classList.add("urgent");
+    }else{
+      this.parentNode.parentNode.firstChild.classList.remove("urgent");
+    }
     input.value = ""; //清空輸入
   }
   //replaceButton::將按鈕加入todoitem中
@@ -44,6 +51,7 @@ function createToDo(){
     console.log("task done :"+this.parentNode.parentNode.firstChild.innerHTML);
 
     //更改todoitem顏色
+    this.parentNode.parentNode.firstChild.classList.remove("urgent");
     this.parentNode.parentNode.firstChild.classList.add("task_done");
     // tbody>tr>td>div.btn
     // 要指向tbody把btn刪掉 

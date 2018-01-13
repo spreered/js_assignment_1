@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 5</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!-- ---------------nav 導覽列--------------- -->
+<div class="list container-fuild">
+<ul class="nav nav-tabs">
+  <li role="presentation" ><a href="Q1.html">Q1</a></li>
+  <li role="presentation"><a href="Q2.html">Q2</a></li>  
+  <li role="presentation"><a href="Q3.html">Q3</a></li>
+  <li role="presentation"><a href="Q4.html">Q4</a></li>
+  <li role="presentation" class="active"><a>Q5</a></li>
+</ul>
+</div>
+<!-- ---------------nav 導覽列 end----------- -->
+
+<!-- ---------------作業區 start--------------- -->
+<div class="container">
+  <h2>Todo list</h2>
+  <div class="row u-mt-70">
+    <div class="col-sm-offset-3 col-sm-6" id="control_panel">
+      <div class="input-group">
+        <input type="text" id="task"class="form-control" placeholder="something to do ....">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="button" id="todo_btn" onclick="createToDo()">新增</button>
+        </span>
+      </div><!-- /input-group -->
+      <form action="">
+        <label class="radio-inline">
+          <input type="radio" name="priority" id="urgent" value="urgent" checked>緊急
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="priority" id="not_urgent" value="not_urgent"> 不緊急
+        </label>
+      </form>
+      <span id="message"></span>
+    </div>
+    
+    <!-- show todo -->
+    <div class="col-sm-offset-2 col-sm-8 u-mt-70">
+      <table class="table table-hover" >
+        <thead>
+          <th width="80%">Todo</th>
+          <th></td>
+        </thead>
+        <tbody id="todo_body">
+        <!-- Example:
+          <tr>
+              <td>todoitem</td>
+              <td>
+                <div class="btn btn-default">R</div>
+                <div class="btn btn-default">V</div>
+              </td>
+            </tr> 
+          -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+      
+  </div>
+  </div>
+  <!-- ---------------作業區 end--------------- -->
+
+<!-- ---------------作業區 end --------------- -->
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/Q5.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
